@@ -1,0 +1,10 @@
+1. select e.ecode,e.ename from emp e, Department d where e.dept_no = d.dept_no and d.location = 'Mumbai' and e.salary>20000;
+
+2. select count(distinct dept_id) from emp2 where last_name='SACHIN';
+
+3. select first_name, hire_date from employees where job_id = 'IT_PROG' or job_id = 'SA_MAN';
+
+4. select department_id,count(employee_id) from employees where commission_pct is not null having count(employee_id)>5 group by department_id;
+
+5. select first_name, last_name, employee_id from employees where hire_date like '%MAY%';
+
